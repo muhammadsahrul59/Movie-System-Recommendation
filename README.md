@@ -83,7 +83,7 @@ Proses *Data Preparation* yang digunakan yaitu:
 
 Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Proses ini dilakukan dengan menggunakan tiga algoritma, yakni ***Content Based Filtering*** dan ***Collaborative Filtering***. Hasil akhir yang diharapkan dari sistem rekomendasi ini adalah dapat memudahkan pengguna untuk mencari film yang diinginkan, baik berdasarkan preferensi film yang serupa, ataupun rekomendasi berdasarkan rating.
 
-1. Dalam membangun ***Content Based Filtering***, hal pertama yang akan dilakukan adalah melakukan pembobotan terhadap fitur `*genre*` menggunakan module `*TfidfVectorizer*` dari *library* `*sklearn*` untuk mendapatkan genre apa saja yang ada. Selanjutnya, digunakan `*module*` `*cosine_similarity*` dari *library* `*sklearn*`. Digunakan fungsi `*movie_recommendation* `dengan parameter `*movie_name*` untuk membangun model. Pada fungsi tersebut juga ditetapkan `*k = 5*` yang berarti akan mengeluarkan rekomendasi 5 film teratas berdasarkan genre.
+1. Dalam membangun ***Content Based Filtering***, hal pertama yang akan dilakukan adalah melakukan pembobotan terhadap fitur `genre` menggunakan module `TfidfVectorizer` dari *library* `sklearn` untuk mendapatkan genre apa saja yang ada. Selanjutnya, digunakan `module` `cosine_similarity` dari *library* `sklearn`. Digunakan fungsi `movie_recommendation` dengan parameter `movie_name` untuk membangun model. Pada fungsi tersebut juga ditetapkan `k = 5` yang berarti akan mengeluarkan rekomendasi 5 film teratas berdasarkan genre.
 
 Tabel 2. *Movie* yang disukai oleh pengguna dimasa lalu.
 
